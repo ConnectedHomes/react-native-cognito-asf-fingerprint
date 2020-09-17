@@ -1,4 +1,4 @@
-package uk.co.sandfox.cognito-asf-fingerprint;
+package uk.co.sandfox.cognito_asf_fingerprint;
 
 import java.util.Arrays;
 import java.util.Collections;
