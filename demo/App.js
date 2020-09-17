@@ -11,6 +11,7 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import CognitoAsfFingerprint from 'react-native-cognito-asf-fingerprint';
+import base64 from 'react-native-base64'
 
 export default class App extends Component<{}> {
   state = {
@@ -18,12 +19,18 @@ export default class App extends Component<{}> {
     message: '--'
   };
   componentDidMount() {
-    CognitoAsfFingerprint.sampleMethod('Testing', 123, (message) => {
+    CognitoAsfFingerprint.sandfox('poolId', 'userid', 'deviceid', 'clientId').then(message => {
       this.setState({
-        status: 'native callback received',
-        message
+        status: 'native promise received',
+        message: base64.decode(message)
       });
-    });
+    })
+    // CognitoAsfFingerprint.sampleMethod('Testing', 123, (message) => {
+    //   this.setState({
+    //     status: 'native callback received',
+    //     message
+    //   });
+    // });
   }
   render() {
     return (
@@ -31,7 +38,7 @@ export default class App extends Component<{}> {
         <Text style={styles.welcome}>☆CognitoAsfFingerprint example☆</Text>
         <Text style={styles.instructions}>STATUS: {this.state.status}</Text>
         <Text style={styles.welcome}>☆NATIVE CALLBACK MESSAGE☆</Text>
-        <Text style={styles.instructions}>{this.state.message}</Text>
+        <Text style={styles.instructions} selectable={true}>{this.state.message}</Text>
       </View>
     );
   }

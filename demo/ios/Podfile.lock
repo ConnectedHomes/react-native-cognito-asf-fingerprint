@@ -1,4 +1,5 @@
 PODS:
+  - AWSCognitoIdentityProviderASF (1.1.0)
   - boost-for-react-native (1.63.0)
   - CocoaAsyncSocket (7.6.4)
   - CocoaLibEvent (1.0.0)
@@ -303,6 +304,7 @@ PODS:
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
+  - AWSCognitoIdentityProviderASF (from `https://github.com/aws/aws-sdk-ios.git`, branch `develop`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/Libraries/FBReactNativeSpec`)
@@ -368,6 +370,9 @@ SPEC REPOS:
     - YogaKit
 
 EXTERNAL SOURCES:
+  AWSCognitoIdentityProviderASF:
+    :branch: develop
+    :git: https://github.com/aws/aws-sdk-ios.git
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   FBLazyVector:
@@ -423,7 +428,13 @@ EXTERNAL SOURCES:
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
+CHECKOUT OPTIONS:
+  AWSCognitoIdentityProviderASF:
+    :commit: 334ca3770102ab4689c6c283a6c5c609acc9669e
+    :git: https://github.com/aws/aws-sdk-ios.git
+
 SPEC CHECKSUMS:
+  AWSCognitoIdentityProviderASF: 22041f11b729cc109c27de9e2cb6c41098652c82
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   CocoaLibEvent: 2fab71b8bd46dd33ddb959f7928ec5909f838e3f
@@ -464,6 +475,6 @@ SPEC CHECKSUMS:
   Yoga: 7740b94929bbacbddda59bf115b5317e9a161598
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 0dd36db45b7761aa76d97584066df61529cbd892
+PODFILE CHECKSUM: 246d2134b5e2b4a2e1ba333ddcbee8f4c4fa74e4
 
 COCOAPODS: 1.9.3

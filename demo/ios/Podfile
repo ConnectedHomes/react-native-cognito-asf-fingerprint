@@ -8,6 +8,9 @@ target 'demo' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  # pod 'AWSCognitoIdentityProvider', '~> 2.16.0'
+  pod 'AWSCognitoIdentityProviderASF', :git => 'https://github.com/aws/aws-sdk-ios.git', :branch => 'develop'
+
   target 'demoTests' do
     inherit! :complete
     # Pods for testing
