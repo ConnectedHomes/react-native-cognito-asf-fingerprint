@@ -1,0 +1,301 @@
+{
+    "_internal_aapt2_binary": {
+        "com.android.tools.build:aapt2": {
+            "locked": "3.5.3-5435860",
+            "requested": "3.5.3-5435860"
+        }
+    },
+    "debugAndroidTestCompileClasspath": {
+        "androidx.swiperefreshlayout:swiperefreshlayout": {
+            "locked": "1.0.0",
+            "requested": "1.0.0"
+        },
+        "com.facebook.flipper:flipper": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.flipper:flipper-fresco-plugin": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.flipper:flipper-network-plugin": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.react:react-native": {
+            "locked": "0.63.2",
+            "requested": "+"
+        },
+        "org.webkit:android-jsc": {
+            "locked": "r245459",
+            "requested": "+"
+        },
+        "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint": {
+            "project": true
+        }
+    },
+    "debugAndroidTestRuntimeClasspath": {
+        "androidx.swiperefreshlayout:swiperefreshlayout": {
+            "locked": "1.0.0",
+            "requested": "1.0.0"
+        },
+        "com.amazonaws:aws-android-sdk-cognitoidentityprovider-asf": {
+            "firstLevelTransitive": [
+                "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint"
+            ],
+            "locked": "1.0.0"
+        },
+        "com.facebook.flipper:flipper": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.flipper:flipper-fresco-plugin": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.flipper:flipper-network-plugin": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.react:react-native": {
+            "firstLevelTransitive": [
+                "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint"
+            ],
+            "locked": "0.63.2",
+            "requested": "+"
+        },
+        "org.webkit:android-jsc": {
+            "locked": "r245459",
+            "requested": "+"
+        },
+        "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint": {
+            "project": true
+        }
+    },
+    "debugCompileClasspath": {
+        "androidx.swiperefreshlayout:swiperefreshlayout": {
+            "locked": "1.0.0",
+            "requested": "1.0.0"
+        },
+        "com.facebook.flipper:flipper": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.flipper:flipper-fresco-plugin": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.flipper:flipper-network-plugin": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.react:react-native": {
+            "locked": "0.63.2",
+            "requested": "+"
+        },
+        "org.webkit:android-jsc": {
+            "locked": "r245459",
+            "requested": "+"
+        },
+        "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint": {
+            "project": true
+        }
+    },
+    "debugRuntimeClasspath": {
+        "androidx.swiperefreshlayout:swiperefreshlayout": {
+            "locked": "1.0.0",
+            "requested": "1.0.0"
+        },
+        "com.amazonaws:aws-android-sdk-cognitoidentityprovider-asf": {
+            "firstLevelTransitive": [
+                "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint"
+            ],
+            "locked": "1.0.0"
+        },
+        "com.facebook.flipper:flipper": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.flipper:flipper-fresco-plugin": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.flipper:flipper-network-plugin": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.react:react-native": {
+            "firstLevelTransitive": [
+                "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint"
+            ],
+            "locked": "0.63.2",
+            "requested": "+"
+        },
+        "org.webkit:android-jsc": {
+            "locked": "r245459",
+            "requested": "+"
+        },
+        "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint": {
+            "project": true
+        }
+    },
+    "debugUnitTestCompileClasspath": {
+        "androidx.swiperefreshlayout:swiperefreshlayout": {
+            "locked": "1.0.0",
+            "requested": "1.0.0"
+        },
+        "com.facebook.flipper:flipper": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.flipper:flipper-fresco-plugin": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.flipper:flipper-network-plugin": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.react:react-native": {
+            "locked": "0.63.2",
+            "requested": "+"
+        },
+        "org.webkit:android-jsc": {
+            "locked": "r245459",
+            "requested": "+"
+        },
+        "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint": {
+            "project": true
+        }
+    },
+    "debugUnitTestRuntimeClasspath": {
+        "androidx.swiperefreshlayout:swiperefreshlayout": {
+            "locked": "1.0.0",
+            "requested": "1.0.0"
+        },
+        "com.amazonaws:aws-android-sdk-cognitoidentityprovider-asf": {
+            "firstLevelTransitive": [
+                "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint"
+            ],
+            "locked": "1.0.0"
+        },
+        "com.facebook.flipper:flipper": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.flipper:flipper-fresco-plugin": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.flipper:flipper-network-plugin": {
+            "locked": "0.37.0",
+            "requested": "0.37.0"
+        },
+        "com.facebook.react:react-native": {
+            "firstLevelTransitive": [
+                "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint"
+            ],
+            "locked": "0.63.2",
+            "requested": "+"
+        },
+        "org.webkit:android-jsc": {
+            "locked": "r245459",
+            "requested": "+"
+        },
+        "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint": {
+            "project": true
+        }
+    },
+    "lintClassPath": {
+        "com.android.tools.lint:lint-gradle": {
+            "locked": "26.5.3",
+            "requested": "26.5.3"
+        }
+    },
+    "releaseCompileClasspath": {
+        "androidx.swiperefreshlayout:swiperefreshlayout": {
+            "locked": "1.0.0",
+            "requested": "1.0.0"
+        },
+        "com.facebook.react:react-native": {
+            "locked": "0.63.2",
+            "requested": "+"
+        },
+        "org.webkit:android-jsc": {
+            "locked": "r245459",
+            "requested": "+"
+        },
+        "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint": {
+            "project": true
+        }
+    },
+    "releaseRuntimeClasspath": {
+        "androidx.swiperefreshlayout:swiperefreshlayout": {
+            "locked": "1.0.0",
+            "requested": "1.0.0"
+        },
+        "com.amazonaws:aws-android-sdk-cognitoidentityprovider-asf": {
+            "firstLevelTransitive": [
+                "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint"
+            ],
+            "locked": "1.0.0"
+        },
+        "com.facebook.react:react-native": {
+            "firstLevelTransitive": [
+                "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint"
+            ],
+            "locked": "0.63.2",
+            "requested": "+"
+        },
+        "org.webkit:android-jsc": {
+            "locked": "r245459",
+            "requested": "+"
+        },
+        "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint": {
+            "project": true
+        }
+    },
+    "releaseUnitTestCompileClasspath": {
+        "androidx.swiperefreshlayout:swiperefreshlayout": {
+            "locked": "1.0.0",
+            "requested": "1.0.0"
+        },
+        "com.facebook.react:react-native": {
+            "locked": "0.63.2",
+            "requested": "+"
+        },
+        "org.webkit:android-jsc": {
+            "locked": "r245459",
+            "requested": "+"
+        },
+        "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint": {
+            "project": true
+        }
+    },
+    "releaseUnitTestRuntimeClasspath": {
+        "androidx.swiperefreshlayout:swiperefreshlayout": {
+            "locked": "1.0.0",
+            "requested": "1.0.0"
+        },
+        "com.amazonaws:aws-android-sdk-cognitoidentityprovider-asf": {
+            "firstLevelTransitive": [
+                "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint"
+            ],
+            "locked": "1.0.0"
+        },
+        "com.facebook.react:react-native": {
+            "firstLevelTransitive": [
+                "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint"
+            ],
+            "locked": "0.63.2",
+            "requested": "+"
+        },
+        "org.webkit:android-jsc": {
+            "locked": "r245459",
+            "requested": "+"
+        },
+        "uk.co.sandfox.cognito-asf-fingerprint:react-native-cognito-asf-fingerprint": {
+            "project": true
+        }
+    }
+}
