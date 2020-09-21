@@ -3,7 +3,6 @@ package uk.co.sandfox.cognito_asf_fingerprint;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.Promise;
 
 import com.amazonaws.cognito.clientcontext.data.UserContextDataProvider;
@@ -23,7 +22,7 @@ public class CognitoAsfFingerprintModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void sandfox(String poolId, String userId, String appId, Promise promise) {
+    public void getData(String poolId, String userId, String appId, Promise promise) {
         try {
             String userContextData = null;
             UserContextDataProvider dataProvider = UserContextDataProvider.getInstance();
@@ -32,11 +31,5 @@ public class CognitoAsfFingerprintModule extends ReactContextBaseJavaModule {
         } catch (Exception e) {
             promise.reject(e);
         }
-    }
-
-    @ReactMethod
-    public void sampleMethod(String stringArgument, int numberArgument, Callback callback) {
-        // TODO: Implement some actually useful functionality
-        callback.invoke("Received numberArgument: " + numberArgument + " stringArgument: " + stringArgument);
     }
 }

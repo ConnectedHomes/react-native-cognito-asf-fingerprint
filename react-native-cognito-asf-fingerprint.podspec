@@ -22,6 +22,10 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency "React"
+  s.dependency "UICKeyChainStore", "~> 2.2.0"
+  s.dependency "AWSCognitoIdentityProviderASF", "~> 1.1.0"
+  ## override with the following until 1.1.0 is published
+  # :git => 'https://github.com/aws/aws-sdk-ios.git', :branch => 'develop'
   # ...
   # s.dependency "..."
 end

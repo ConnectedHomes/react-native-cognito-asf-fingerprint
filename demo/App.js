@@ -9,36 +9,49 @@
  */
 
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
-import CognitoAsfFingerprint from 'react-native-cognito-asf-fingerprint';
+import { Platform, StyleSheet, Text, View, Button } from 'react-native';
+import { getData } from 'react-native-cognito-asf-fingerprint';
 import base64 from 'react-native-base64'
 
 export default class App extends Component<{}> {
   state = {
-    status: 'starting',
-    message: '--'
+    status: 'ready',
+    aSFDeviceId: '--',
+    signature: '--',
+    version: '--',
+
   };
-  componentDidMount() {
-    CognitoAsfFingerprint.sandfox('poolId', 'userid', 'deviceid', 'clientId').then(message => {
-      this.setState({
-        status: 'native promise received',
-        message: base64.decode(message)
-      });
-    })
-    // CognitoAsfFingerprint.sampleMethod('Testing', 123, (message) => {
-    //   this.setState({
-    //     status: 'native callback received',
-    //     message
-    //   });
-    // });
+
+  requestFingerprint = async () => {
+    const message = await getData('userid', 'poolId', 'clientId')
+    // message will base64 encoded JSON blob
+    const decoded = base64.decode(message);
+    const {payload, version, signature} = JSON.parse(decoded);
+    const parsedPayload = JSON.parse(payload);
+
+    this.setState({
+      status: 'device fingerprint received', 
+      signature,
+      version,
+      aSFDeviceId: parsedPayload.contextData.DeviceId,
+      payload,
+      custom: parsedPayload.contextData.DeviceFingerprint,
+      message
+    });
+
   }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>☆CognitoAsfFingerprint example☆</Text>
+        <Text style={styles.welcome}>CognitoAsfFingerprint example</Text>
+        <Button title="Get ASF Fingerprint" onPress={this.requestFingerprint} />
         <Text style={styles.instructions}>STATUS: {this.state.status}</Text>
-        <Text style={styles.welcome}>☆NATIVE CALLBACK MESSAGE☆</Text>
-        <Text style={styles.instructions} selectable={true}>{this.state.message}</Text>
+        <Text style={styles.welcome}>Fingerprint</Text>
+        <Text style={styles.instructions}>Signature: {this.state.signature}</Text>
+        <Text style={styles.instructions}>Version: {this.state.version}</Text>
+        <Text style={styles.instructions}>ASF DeviceId: {this.state.aSFDeviceId}</Text>
+        <Text style={styles.instructions}>$${this.state.message}$$</Text>
       </View>
     );
   }
@@ -62,3 +75,5 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+
