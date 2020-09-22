@@ -1,5 +1,5 @@
 PODS:
-  - AWSCognitoIdentityProviderASF (1.1.0)
+  - AWSCognitoIdentityProviderASF (1.0.2)
   - boost-for-react-native (1.63.0)
   - CocoaAsyncSocket (7.6.4)
   - CocoaLibEvent (1.0.0)
@@ -237,8 +237,8 @@ PODS:
     - React-cxxreact (= 0.63.2)
     - React-jsi (= 0.63.2)
   - React-jsinspector (0.63.2)
-  - react-native-cognito-asf-fingerprint (0.0.1):
-    - AWSCognitoIdentityProviderASF (~> 1.1.0)
+  - react-native-cognito-asf-fingerprint (0.0.2):
+    - AWSCognitoIdentityProviderASF (~> 1.0.2)
     - React
     - UICKeyChainStore (~> 2.2.0)
   - React-RCTActionSheet (0.63.2):
@@ -307,7 +307,7 @@ PODS:
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
-  - AWSCognitoIdentityProviderASF (from `https://github.com/aws/aws-sdk-ios.git`)
+  - AWSCognitoIdentityProviderASF
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/Libraries/FBReactNativeSpec`)
@@ -359,6 +359,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AWSCognitoIdentityProviderASF
     - boost-for-react-native
     - CocoaAsyncSocket
     - CocoaLibEvent
@@ -374,8 +375,6 @@ SPEC REPOS:
     - YogaKit
 
 EXTERNAL SOURCES:
-  AWSCognitoIdentityProviderASF:
-    :git: https://github.com/aws/aws-sdk-ios.git
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   FBLazyVector:
@@ -431,13 +430,8 @@ EXTERNAL SOURCES:
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
-CHECKOUT OPTIONS:
-  AWSCognitoIdentityProviderASF:
-    :commit: 9211e223c89b76e1e37f077e9c55ef187dec7c56
-    :git: https://github.com/aws/aws-sdk-ios.git
-
 SPEC CHECKSUMS:
-  AWSCognitoIdentityProviderASF: 22041f11b729cc109c27de9e2cb6c41098652c82
+  AWSCognitoIdentityProviderASF: 0fb6ea671c05a63276e320726f680cd880522442
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   CocoaLibEvent: 2fab71b8bd46dd33ddb959f7928ec5909f838e3f
@@ -464,7 +458,7 @@ SPEC CHECKSUMS:
   React-jsi: 54245e1d5f4b690dec614a73a3795964eeef13a8
   React-jsiexecutor: 8ca588cc921e70590820ce72b8789b02c67cce38
   React-jsinspector: b14e62ebe7a66e9231e9581279909f2fc3db6606
-  react-native-cognito-asf-fingerprint: e189c039201076b3b5351a67928e876b63daca23
+  react-native-cognito-asf-fingerprint: 33212e5bd0d8ae6ab0b479e5666a0751551230f9
   React-RCTActionSheet: 910163b6b09685a35c4ebbc52b66d1bfbbe39fc5
   React-RCTAnimation: 9a883bbe1e9d2e158d4fb53765ed64c8dc2200c6
   React-RCTBlob: 39cf0ece1927996c4466510e25d2105f67010e13
@@ -479,6 +473,6 @@ SPEC CHECKSUMS:
   Yoga: 7740b94929bbacbddda59bf115b5317e9a161598
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: e89ea19e7e8d334d8c9836485ad076054f3f9f3b
+PODFILE CHECKSUM: 4bbc0e100917bedd9155d146c66e8eae7a3fd7b8
 
 COCOAPODS: 1.9.3

@@ -13,8 +13,7 @@ target 'demo' do
   use_react_native!(:path => config["reactNativePath"])
 
   # aws-amplify-ios seems to only work with use_frameworks
-  # Ovveride until 1.1.0 is published
-  pod 'AWSCognitoIdentityProviderASF', :build_type => :dynamic_framework, :git => 'https://github.com/aws/aws-sdk-ios.git'
+  pod 'AWSCognitoIdentityProviderASF', :build_type => :dynamic_framework
 
   target 'demoTests' do
     inherit! :complete
