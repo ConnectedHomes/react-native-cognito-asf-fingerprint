@@ -237,7 +237,7 @@ PODS:
     - React-cxxreact (= 0.63.2)
     - React-jsi (= 0.63.2)
   - React-jsinspector (0.63.2)
-  - react-native-cognito-asf-fingerprint (1.0.0):
+  - react-native-cognito-asf-fingerprint (0.0.1):
     - AWSCognitoIdentityProviderASF (~> 1.1.0)
     - React
     - UICKeyChainStore (~> 2.2.0)
@@ -307,7 +307,7 @@ PODS:
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
-  - AWSCognitoIdentityProviderASF (from `https://github.com/aws/aws-sdk-ios.git`, branch `develop`)
+  - AWSCognitoIdentityProviderASF (from `https://github.com/aws/aws-sdk-ios.git`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/Libraries/FBReactNativeSpec`)
@@ -375,7 +375,6 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   AWSCognitoIdentityProviderASF:
-    :branch: develop
     :git: https://github.com/aws/aws-sdk-ios.git
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
@@ -434,7 +433,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   AWSCognitoIdentityProviderASF:
-    :commit: 334ca3770102ab4689c6c283a6c5c609acc9669e
+    :commit: 9211e223c89b76e1e37f077e9c55ef187dec7c56
     :git: https://github.com/aws/aws-sdk-ios.git
 
 SPEC CHECKSUMS:
@@ -465,7 +464,7 @@ SPEC CHECKSUMS:
   React-jsi: 54245e1d5f4b690dec614a73a3795964eeef13a8
   React-jsiexecutor: 8ca588cc921e70590820ce72b8789b02c67cce38
   React-jsinspector: b14e62ebe7a66e9231e9581279909f2fc3db6606
-  react-native-cognito-asf-fingerprint: 7c575aaf88574d5c8e199e417052a668b4963023
+  react-native-cognito-asf-fingerprint: e189c039201076b3b5351a67928e876b63daca23
   React-RCTActionSheet: 910163b6b09685a35c4ebbc52b66d1bfbbe39fc5
   React-RCTAnimation: 9a883bbe1e9d2e158d4fb53765ed64c8dc2200c6
   React-RCTBlob: 39cf0ece1927996c4466510e25d2105f67010e13
@@ -480,6 +479,6 @@ SPEC CHECKSUMS:
   Yoga: 7740b94929bbacbddda59bf115b5317e9a161598
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 4922a7fc5a045e7eaf43697e1c0de21201832bfd
+PODFILE CHECKSUM: e89ea19e7e8d334d8c9836485ad076054f3f9f3b
 
 COCOAPODS: 1.9.3

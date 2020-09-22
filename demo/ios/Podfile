@@ -1,6 +1,10 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
+plugin 'cocoapods-user-defined-build-types'
+
+enable_user_defined_build_types!
+
 platform :ios, '10.0'
 
 target 'demo' do
@@ -8,8 +12,9 @@ target 'demo' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  # aws-amplify-ios seems to only work with use_frameworks
   # Ovveride until 1.1.0 is published
-  pod 'AWSCognitoIdentityProviderASF', :git => 'https://github.com/aws/aws-sdk-ios.git', :branch => 'develop'
+  pod 'AWSCognitoIdentityProviderASF', :build_type => :dynamic_framework, :git => 'https://github.com/aws/aws-sdk-ios.git'
 
   target 'demoTests' do
     inherit! :complete
