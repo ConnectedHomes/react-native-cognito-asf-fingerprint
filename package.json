@@ -1,7 +1,7 @@
 {
   "name": "react-native-cognito-asf-fingerprint",
   "title": "React Native Cognito Asf Fingerprint",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "JS wrapper around native java and objc Cognito ASF libraries",
   "main": "index.js",
   "files": [
@@ -16,8 +16,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sandfox/react-native-cognito-asf-fingerprint.git",
-    "baseUrl": "https://github.com/sandfox/react-native-cognito-asf-fingerprint"
+    "url": "git+https://github.com/ConnectedHomes/react-native-cognito-asf-fingerprint.git",
+    "baseUrl": "https://github.com/ConnectedHomes/react-native-cognito-asf-fingerprint"
   },
   "keywords": [
     "react-native"
