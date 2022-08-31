@@ -134,6 +134,10 @@ afterEvaluate { project ->
    task installArchives(type: Upload) {
         configuration = configurations.archives
         publishing {
+            repositories.maven {
+                // Deploy to react-native-event-bridge/maven, ready to publish to npm
+                url = "file://${projectDir}/../android/maven"
+            }
             publications {
                 maven(MavenPublication) {
                     artifact androidSourcesJar
