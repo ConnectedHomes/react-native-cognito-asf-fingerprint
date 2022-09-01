@@ -1,7 +1,7 @@
 {
   "name": "react-native-cognito-asf-fingerprint",
   "title": "React Native Cognito Asf Fingerprint",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "JS wrapper around native java and objc Cognito ASF libraries",
   "main": "index.js",
   "files": [

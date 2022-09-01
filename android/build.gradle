@@ -107,7 +107,8 @@ afterEvaluate { project ->
     task androidJavadoc(type: Javadoc) {
         source = android.sourceSets.main.java.srcDirs
         classpath += files(android.bootClasspath)
-        classpath += files(project.getConfigurations().getByName('compile').asList())
+//TODO revisit as it blocks build on RN 0.68
+//        classpath += files(project.getConfigurations().getByName('implementation').asList())
         include '**/*.java'
     }
 
